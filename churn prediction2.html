@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Customer Consultant agency</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Removed the favicon links
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+ 
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<!-- 
+  <link href="churn-prediction-styles.css" rel="stylesheet" type="text/css">
+-->
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!-- <h1><a href="index3.html">NewBiz</a></h1> -->
+        <a href="index3.html"><img src="assets/img/FTI.jpg" alt="" class="img-fluid"></a>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index3.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Consultation</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="churn prediction2.html">Attrition Prediction</a></li>
+              <li><a href="business planning.html">Business Planning</a></li>
+              <li><a href="customer segmentation.html">Customer Segmentation</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index3.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  
+   
+    </header><!-- #header -->
+  <!-- ======= Hero Section ======= -->
+<style>
+    /* Global CSS for form layout */
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-column {
+        flex: 1;
+    }
+
+    .form-row {
+        margin-bottom: 10px;
+    }
+
+    .form-row label {
+        color: white;
+    }
+
+    .form-row select,
+    .form-row input[type="text"] {
+        width: 100%;
+    }
+</style>
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200"><br><br><br><br><br><br>
+        <img src="assets/img/istockphoto-1282701229-612x612.png" alt="" class="img-fluid"><br><br>
+	<p class="card-text" style="color: white; text-align: center;">Our sole focus is on unlocking better growth for our clients, increasing their long-term sales, value, and profit. We achieve this by optimizing every lever of their commercial strategy – product, price, innovation, marketing, and sales.</p><br><br>
+	<img src="assets/img/Computer-siumulation.png" alt="" class="img-fluid"><br><br>
+	<p class="card-text" style="color: white; text-align: center;">We pride ourselves on being hands-on and results-driven. Our projects increase our clients’ profitability by an average of 100 to 500 basis points.
+
+We don’t apply one-size-fits-all approaches in our projects but tailor our solutions to our client’s specific needs.
+
+Last but not least, we make sure our solutions get implemented properly.
+
+The ultimate measure of our success is our client’s success.Our team combines specialist industry, functional, and digital expertise.
+
+We know how to monetize innovations, drive growth, and transform businesses to keep ahead in the digital world.
+
+From strategies to tangible outcomes, our solutions are made to last.</p><br>
+
+      </div>
+  
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2><br><span style="color: #your_new_color; text-decoration: none;">ATTRITION PREDICTION</span><br></h2>
+        
+<div class="form-container">
+
+    <form action="/predict" method="post" onsubmit="return validateForm();">
+	<div class="form-column">
+        <div class="form-row">
+            <label for="Customer_Age">Customer Age :</label>
+            <input type="text" id="Customer_Age" name="Customer_Age" autocomplete="off">
+        
+	</div>
+	
+        <div class="form-row">
+            <label for="Gender">Gender :</label>
+            <select id="Gender" name="Gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        
+	</div>
+	
+        <div class="form-row">
+            <label for="Dependent_count" title="Number of dependents that customer has">Dependent Count :</label>
+            <input type="text" id="Dependent_count" name="Dependent_count" autocomplete="off">
+        </div>
+	
+	
+        <div class="form-row">
+            <label for="Education_Level">Education Level:</label>
+            <select id="Education_Level" name="Education_Level">
+                <option value="High School">High School</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Uneducated">Uneducated</option>
+                <option value="College">College</option>
+                <option value="Post-Graduate">Post-Graduate</option>
+                <option value="Doctorate">Doctorate</option>
+            </select>
+        
+	</div>
+	
+	<div class="form-row">
+        <label for="Marital_Status" style="color: white;">Marital Status:</label>
+        <select id="Marital_Status" name="Marital_Status">
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+            <option value="Divorced">Divorced</option>
+        </select>
+	
+	</div>
+	
+	<div class="form-row">
+        <label for="Income_Category" style="color: white;">Income Category:</label>
+        <select id="Income_Category" name="Income_Category">
+            <option value="$60K - $80K">$60K - $80K</option>
+            <option value="Less than $40K">Less than $40K</option>
+            <option value="$80K - $120K">$80K - $120K</option>
+            <option value="$40K - $60K">$40K - $60K</option>
+            <option value="$120K +">$120K +</option>
+        </select>
+	
+	</div>
+	
+	<div class="form-row">
+        <label for="Card_Category" style="color: white;">Card Category:</label>
+        <select id="Card_Category" name="Card_Category">
+            <option value="Blue">Blue</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Platinum">Platinum</option>
+        </select>
+	
+	</div>
+	
+	<div class="form-row">
+        <label for="Months_on_book" title= " How long customer has been on records" style="color: white;">Months on book :</label>
+        <input type="text" id="Months_on_book" name="Months_on_book" autocomplete="off">
+	
+	</div>
+	
+	<div class="form-row">
+        <label for="Total_Relationship_Count" title= "Total number of relationships customer has with the credit card provider"  style="color: white;">Total Relationship Count :</label>
+        <input type="text" id="Total_Relationship_Count" name="Total_Relationship_Count" autocomplete="off">
+	
+	</div>
+	</div>
+	<div class="form-column">
+	<div class="form-row">
+        <label for="Months_Inactive_12_mon" title="Number of months customer has been inactive in the last 12 months" style="color: white;">Months Inactive(12 months) :</label>
+        <select id="Months_Inactive_12_mon" name="Months_Inactive_12_mon">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+	
+	</div>
+	
+	<div class="form-row">
+        <label for="Contacts_Count_12_mon" title="Number of contacts customer has had in the last 12 months"style="color: white;">Contacts Count(12 months) :</label>
+        <input type="text" id="Contacts_Count_12_mon" name="Contacts_Count_12_mon" autocomplete="off">
+	</div>
+	
+	
+	<div class="form-row">
+        <label for="Credit_Limit" style="color: white;">Credit Limit ($):</label>
+        <input type="text" id="Credit_Limit" name="Credit_Limit" autocomplete="off">
+	</div>
+	
+	
+	<div class="form-row">
+        <label for="Total_Revolving_Bal" style="color: white;">Total Revolving Balance:</label>
+        <input type="text" id="Total_Revolving_Bal" name="Total_Revolving_Bal" autocomplete="off">
+	</div>
+
+	
+	<div class="form-row">
+        <label for="Avg_Open_To_Buy" title="Average open to buy ratio of customer" style="color: white;">Avg open to buy ratio :</label>
+        <input type="text" id="Avg_Open_To_Buy" name="Avg_Open_To_Buy" autocomplete="off">
+	</div>
+	
+	
+	<div class="form-row">
+        <label for="Total_Amt_Chng_Q4_Q1" title="Total amount changed from 4th quarter to 1st quarter " style="color: white;">Total Amount Changed (Q4 to Q1) :</label>
+        <input type="text" id="Total_Amt_Chng_Q4_Q1" name="Total_Amt_Chng_Q4_Q1" autocomplete="off">
+	</div>
+	
+	
+	<div class="form-row">
+        <label for="Total_Trans_Amt" style="color: white;">Total Transaction Amount ($) :</label>
+        <input type="text" id="Total_Trans_Amt" name="Total_Trans_Amt" autocomplete="off">
+	</div>
+	
+	
+	<div class="form-row">
+        <label for="Total_Trans_Ct" style="color: white;">Total Transaction Count :</label>
+        <input type="text" id="Total_Trans_Ct" name="Total_Trans_Ct" autocomplete="off">
+	</div>
+	
+	
+	<div class="form-row">
+        <label for="Total_Ct_Chng_Q4_Q1" style="color: white;">Total Count Changed(Q4 to Q1) :</label>
+        <input type="text" id="Total_Ct_Chng_Q4_Q1" name="Total_Ct_Chng_Q4_Q1" autocomplete="off">
+	</div>
+	
+	
+        <div class="form-row">
+            <label for="Avg_Utilization_Ratio">Average Utilization Ratio :</label>
+            <input type="text" id="Avg_Utilization_Ratio" name="Avg_Utilization_Ratio" autocomplete="off">
+        </div>
+	
+	
+        <div class="form-row">
+            <input type="submit" value="PREDICT">
+        </div>
+	</div>
+    </form>
+</div>
+</div>
+
+    <script>
+
+        function validateForm() {
+            var customerAge = document.getElementById("Customer_Age");
+            // Add similar references for other fields
+
+            if (customerAge.value === '') {
+                alert("Please complete all fields before submitting.");
+                return false;
+            }
+
+            // Add similar checks for other fields
+
+            // If all fields are filled, the function displayRandomOutcome() is called
+            return displayRandomOutcome();
+        }
+
+        function displayRandomOutcome() {
+            var outcomes = [
+                "This customer is likely to be churned!!",
+                "This customer is likely to continue!!"
+            ];
+
+            var randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+            alert(randomOutcome);
+            return false; // Prevent the form from being submitted after displaying the message
+        }
+    </script>
+
+</main><!-- End #main -->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

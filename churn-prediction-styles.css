@@ -1,0 +1,208 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0b6bd3;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #007bff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #2990ff;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 80px;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+}
+
+#header.header-scrolled {
+  height: 60px;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  #header .logo h1 {
+    font-size: 28px;
+  }
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #00366f;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  max-height: 50px;
+}
+/* churn-prediction-styles.css */
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  position: relative;
+  background: url("assets/img/hero-bg.png") center bottom no-repeat;
+  background-size: cover;
+  padding: 200px 0 120px 0;
+  filter: blur(10px); /* Adjust the blur strength as needed */
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("assets/img/Computer-siumulation.png") center bottom no-repeat;
+  background-size: cover;
+  z-index: 1; /* Adjust the z-index to place it above the blurred background */
+}
+
+@media (max-width: 991px) {
+  #hero {
+    padding: 140px 0 60px 0;
+  }
+}
+
+@media (max-width: 574px) {
+  #hero {
+    padding: 100px 0 20px 0;
+  }
+}
+
+#hero .hero-img {
+  width: 50%;
+  float: right;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-img {
+    width: 80%;
+    float: none;
+    margin: 0 auto 25px auto;
+  }
+}
+
+#hero .hero-info {
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 991px) {
+  #hero .hero-info {
+    width: 80%;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero .hero-info {
+    width: 100%;
+  }
+}
+
+#hero .hero-info h2 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero .hero-info h2 span {
+  color: #74b5fc;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  #hero .hero-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+/* Add styles for your form */
+.form-container {
+  background: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity */
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Ensure the form stays above the blurred images */
+}

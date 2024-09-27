@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churn Prediction Form</title>
+</head>
+<body>
+    <h2>Churn Prediction Form</h2>
+    <form action="/predict" method="post">
+        <label for="Customer_Age">Customer Age:</label>
+        <input type="text" id="Customer_Age" name="Customer_Age"><br><br>
+
+        <label for="Gender">Gender:</label>
+        <select id="Gender" name="Gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br><br>
+
+        <label for="Dependent_count">Dependent Count:</label>
+        <input type="text" id="Dependent_count" name="Dependent_count"><br><br>
+
+        <label for="Education_Level">Education Level:</label>
+        <select id="Education_Level" name="Education_Level">
+            <option value="High School">High School</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Uneducated">Uneducated</option>
+            <option value="College">College</option>
+            <option value="Post-Graduate">Post-Graduate</option>
+            <option value="Doctorate">Doctorate</option>
+        </select><br><br>
+
+        <label for="Marital_Status">Marital Status:</label>
+        <select id="Marital_Status" name="Marital_Status">
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+            <option value="Divorced">Divorced</option>
+        </select><br><br>
+
+        <label for="Income_Category">Income Category:</label>
+        <select id="Income_Category" name="Income_Category">
+            <option value="$60K - $80K">$60K - $80K</option>
+            <option value="Less than $40K">Less than $40K</option>
+            <option value="$80K - $120K">$80K - $120K</option>
+            <option value="$40K - $60K">$40K - $60K</option>
+            <option value="$120K +">$120K +</option>
+        </select><br><br>
+
+        <label for="Card_Category">Card Category:</label>
+        <select id="Card_Category" name="Card_Category">
+            <option value="Blue">Blue</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Platinum">Platinum</option>
+        </select><br><br>
+
+        <label for="Months_on_book">Months_on_book:</label>
+        <input type="text" id="Months_on_book" name="Customer_Age"><br><br>
+
+        <label for="Total_Relationship_Count">Total_Relationship_Count:</label>
+        <input type="text" id="Total_Relationship_Count" name="Total_Relationship_Count"><br><br>
+
+        <label for="Months_Inactive_12_mon">Months Inactive 12 months:</label>
+        <select id="Months_Inactive_12_mon" name="Months_Inactive_12_mon">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select><br><br>
+
+        <label for="Contacts_Count_12_mon">Contacts_Count_12_mon:</label>
+        <input type="text" id="Contacts_Count_12_mon" name="Contacts_Count_12_mon"><br><br>
+
+        <label for="Credit_Limit">Credit_Limit:</label>
+        <input type="text" id="Credit_Limit" name="Credit_Limit"><br><br>
+
+        <label for="Total_Revolving_Bal">Total_Revolving_Bal:</label>
+        <input type="text" id="Total_Revolving_Bal" name="Total_Revolving_Bal"><br><br>
+
+        <label for="Avg_Open_To_Buy">Avg_Open_To_Buy:</label>
+        <input type="text" id="Avg_Open_To_Buy" name="Avg_Open_To_Buy"><br><br>
+
+        <label for="Total_Amt_Chng_Q4_Q1">Total_Amt_Chng_Q4_Q1:</label>
+        <input type="text" id="Total_Amt_Chng_Q4_Q1" name="Total_Amt_Chng_Q4_Q1"><br><br>
+
+        <label for="Total_Trans_Amt">Total_Trans_Amt:</label>
+        <input type="text" id="Total_Trans_Amt" name="Total_Trans_Amt"><br><br>
+
+        <label for="Total_Trans_Ct">Total_Trans_Ct:</label>
+        <input type="text" id="Total_Trans_Ct" name="Total_Trans_Ct"><br><br>
+
+        <label for="Total_Ct_Chng_Q4_Q1">Total_Ct_Chng_Q4_Q1:</label>
+        <input type="text" id="Total_Ct_Chng_Q4_Q1" name="Total_Ct_Chng_Q4_Q1"><br><br>
+
+        <label for="Avg_Utilization_Ratio">Avg_Utilization_Ratio:</label>
+        <input type="text" id="Avg_Utilization_Ratio" name="Avg_Utilization_Ratio"><br><br>
+
+       
+
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Churn Prediction Result</h2>
+    <form action="/predict" method="post" onsubmit="return displayRandomOutcome();">
+        <!-- Your form inputs go here -->
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function displayRandomOutcome() {
+            var outcomes = [
+                "This customer is likely to be churned!!",
+                "This customer is likely to continue!!"
+            ];
+
+            var randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+            alert(randomOutcome);
+            return false; // Prevent form submission to a server
+        }
+    </script>
+</body>
+</html>

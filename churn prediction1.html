@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Business Consultant agency</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Removed the favicon links
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!-- <h1><a href="index3.html">NewBiz</a></h1> -->
+        <a href="index3.html"><img src="assets/img/new1.png" alt="" class="img-fluid"></a>
+      </div>
+
+    </div>
+  
+   
+    </header><!-- #header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/Computer-siumulation.png" alt="" class="img-fluid">
+      </div>
+  
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2><br><span>Attrition Prediction</span><br></h2>
+        <div>
+      <form action="/predict" method="post" onsubmit="return validateForm();">
+        <label for="Customer_Age" style="color: white;">Customer Age:</label>
+        <input type="text" id="Customer_Age" name="Customer_Age"><br><br>
+	
+        <label for="Gender" style="color: white;">Gender:</label>
+        <select id="Gender" name="Gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select><br><br>
+
+        <label for="Dependent_count" style="color: white;" title="Number of dependents that customer has">Dependent Count:</label>
+        <input type="text" id="Dependent_count" name="Dependent_count"><br><br>
+
+        <label for="Education_Level" style="color: white;">Education Level:</label>
+        <select id="Education_Level" name="Education_Level">
+            <option value="High School">High School</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Uneducated">Uneducated</option>
+            <option value="College">College</option>
+            <option value="Post-Graduate">Post-Graduate</option>
+            <option value="Doctorate">Doctorate</option>
+        </select><br><br>
+
+        <label for="Marital_Status" style="color: white;">Marital Status:</label>
+        <select id="Marital_Status" name="Marital_Status">
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+            <option value="Divorced">Divorced</option>
+        </select><br><br>
+
+        <label for="Income_Category" style="color: white;">Income Category:</label>
+        <select id="Income_Category" name="Income_Category">
+            <option value="$60K - $80K">$60K - $80K</option>
+            <option value="Less than $40K">Less than $40K</option>
+            <option value="$80K - $120K">$80K - $120K</option>
+            <option value="$40K - $60K">$40K - $60K</option>
+            <option value="$120K +">$120K +</option>
+        </select><br><br>
+
+        <label for="Card_Category" style="color: white;">Card Category:</label>
+        <select id="Card_Category" name="Card_Category">
+            <option value="Blue">Blue</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Platinum">Platinum</option>
+        </select><br><br>
+
+        <label for="Months_on_book" style="color: white;">Months_on_book:</label>
+        <input type="text" id="Months_on_book" name="Customer_Age"><br><br>
+
+        <label for="Total_Relationship_Count" style="color: white;">Total_Relationship_Count:</label>
+        <input type="text" id="Total_Relationship_Count" name="Total_Relationship_Count"><br><br>
+
+        <label for="Months_Inactive_12_mon" style="color: white;">Months Inactive 12 months:</label>
+        <select id="Months_Inactive_12_mon" name="Months_Inactive_12_mon">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select><br><br>
+
+        <label for="Contacts_Count_12_mon" style="color: white;">Contacts_Count_12_mon:</label>
+        <input type="text" id="Contacts_Count_12_mon" name="Contacts_Count_12_mon"><br><br>
+
+        <label for="Credit_Limit" style="color: white;">Credit_Limit:</label>
+        <input type="text" id="Credit_Limit" name="Credit_Limit"><br><br>
+
+        <label for="Total_Revolving_Bal" style="color: white;">Total_Revolving_Bal:</label>
+        <input type="text" id="Total_Revolving_Bal" name="Total_Revolving_Bal"><br><br>
+
+        <label for="Avg_Open_To_Buy" style="color: white;">Avg_Open_To_Buy:</label>
+        <input type="text" id="Avg_Open_To_Buy" name="Avg_Open_To_Buy"><br><br>
+
+        <label for="Total_Amt_Chng_Q4_Q1" style="color: white;">Total_Amt_Chng_Q4_Q1:</label>
+        <input type="text" id="Total_Amt_Chng_Q4_Q1" name="Total_Amt_Chng_Q4_Q1"><br><br>
+
+        <label for="Total_Trans_Amt" style="color: white;">Total_Trans_Amt:</label>
+        <input type="text" id="Total_Trans_Amt" name="Total_Trans_Amt"><br><br>
+
+        <label for="Total_Trans_Ct" style="color: white;">Total_Trans_Ct:</label>
+        <input type="text" id="Total_Trans_Ct" name="Total_Trans_Ct"><br><br>
+
+        <label for="Total_Ct_Chng_Q4_Q1" style="color: white;">Total_Ct_Chng_Q4_Q1:</label>
+        <input type="text" id="Total_Ct_Chng_Q4_Q1" name="Total_Ct_Chng_Q4_Q1"><br><br>
+
+        <label for="Avg_Utilization_Ratio" style="color: white;">Avg_Utilization_Ratio:</label>
+        <input type="text" id="Avg_Utilization_Ratio" name="Avg_Utilization_Ratio"><br><br>
+
+       
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+        function validateForm() {
+            var customerAge = document.getElementById("Customer_Age");
+            // Add similar references for other fields
+
+            if (customerAge.value === '') {
+                alert("Please complete all fields before submitting.");
+                return false;
+            }
+
+            // Add similar checks for other fields
+
+            // If all fields are filled, the function displayRandomOutcome() is called
+            return displayRandomOutcome();
+        }
+
+        function displayRandomOutcome() {
+            var outcomes = [
+                "This customer is likely to be churned!!",
+                "This customer is likely to continue!!"
+            ];
+
+            var randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+            alert(randomOutcome);
+            return false; // Prevent the form from being submitted after displaying the message
+        }
+    </script>
+
+</main><!-- End #main -->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
